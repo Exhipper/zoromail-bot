@@ -3,7 +3,7 @@ const axios = require('axios');
 const express = require('express'); // Added Express for Render compliance
 
 // 1. CONFIGURATION
-const BOT_TOKEN = '6836222721:AAGFzMP28SUNLbRAZRSplbxlpgBfIryiqAE'; 
+const BOT_TOKEN = process.env.BOT_TOKEN;
 const BASE_URL = 'https://zoromail.com/public_api.php/v1';
 
 const bot = new Telegraf(BOT_TOKEN);
